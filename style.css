@@ -1,0 +1,92 @@
+:root {
+  font-size: 62.5%;
+}
+#list ul {
+  font-size: 2rem;
+}
+
+#list > ul > li::before {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  background-size: 2rem 2rem;
+  background-image: url(./images/quotes.png);
+  content: "";
+}
+#list > ul > li::after {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  background-size: 2rem 2rem;
+  background-image: url(./images/quotes.png);
+  content: "";
+}
+.files ul {
+  font-size: 2rem;
+  position: relative;
+}
+.distance {
+  margin: 1rem;
+}
+
+.files ul li a {
+  text-decoration: none;
+}
+.file a::after {
+  display: inline-block;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+  background-size: 3rem 3rem;
+  content: "";
+}
+.pdf a::after {
+  background-image: url(./images/pdf.png);
+}
+.xls a::after {
+  margin-left: 1.5rem;
+  background-image: url(./images/ms-excel.png);
+}
+.doc a::after {
+  background-image: url(./images/ms-word.png);
+}
+.sandwish .content{
+  position: relative;
+  list-style-type: none;
+  font-size: 2rem;
+  border: 2px solid black;
+  width: 90vw;
+  padding:2rem 0;
+}
+.sandwish .content::before {
+  display: inline-block;
+  position: absolute;
+  top:0 ;
+  width: 90vw;
+  height: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 121, 29, 1) 50%,
+    rgba(254, 233, 0, 1) 100%
+  );
+  content: "";
+}
+.sandwish .content::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90vw;
+  height: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(254, 233, 0, 1) 0%,
+    rgba(9, 121, 29, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  content: "";
+}
